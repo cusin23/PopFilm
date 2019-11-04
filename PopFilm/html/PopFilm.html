@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<!--
+
+	<!--
       ___         ___           ___         ___                                   ___     
      /  /\       /  /\         /  /\       /  /\      ___                        /__/\    
     /  /::\     /  /::\       /  /::\     /  /:/_    /  /\                      |  |::\   
@@ -14,30 +15,61 @@
     \  \:\      \  \::/       \  \:\      \  \:\       \__\/       \__\/        \  \:\    
      \__\/       \__\/         \__\/       \__\/                                 \__\/   
 -->
-	
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!--copiamos las direcciones de enlace de las bibliotecas de css y JS de Bootstrap para poder utilizar sus elementos-->
+			  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<!--relacionamos nuestro documento html con el documento css para atribuirle propiedades-->
 		<link rel="stylesheet" type="text/css" href=".././css/mycss.css">
 
 	
 	<title>Pop Film</title>
+	<!--insertamos un favicom-->
+	<link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
 
 </head>
 <body background="../img/fondo2.jpg">
-	<div class="contenedor-superior">
+	<!--creamos una seccon para dividir mejor las partes de nuestra pagina-->
+	<section class="contenedor-superior">
+		<!--creamos un elemento row para tener varios objetos en la misma linea-->
 		<div class="row">
-						<div class="col-sm-3 col-md-4 mi-celda ">
-	  		<div class="logo">
-	  			<img src="../img/PF2.5.png" class="img-fluid">
-	  		</div>
-	  		</div>
-			<div class="col-sm-9 col-md-8  ">
+			<!--indicamos el tamaño que tendra el primer elemento tanto en dispositivos con pantalla pequeña(sm),mediana(md) y grande(lg)-->
+                <div class="col-sm-12 col-md-3 "><div class="logo">
+                        <img src="../img/PF2.5.png" class="img-fluid">
+					</div></div>
+					<!--repetimos el mismo paso con el segundo elemento de la fila-->
+                <div class="col-sm-12 col-md-9 ">
+						<form class="form-inline my-2 my-lg-0 ">
+                                <input class="form-control coy-sm-2 col-md-4" type="search" placeholder="Encuentra tu película favorita" aria-label="Search">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                              </form>
+				</div>
+		</div>
+		</section>
+			
+ 	 	  <div class="contenedorNavbar">
+				<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+				  <a class="navbar-brand" href="#">Novedades </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				    	<div class="navbar-nav">
+						      <a class="nav-item nav-link active" href="#">Resumenes<span class="sr-only">(current)</span></a>
+						      <a class="nav-item nav-link" href="#">Recomendaciones</a>
+						      <a class="nav-item nav-link" href="#">Busqueda</a>
+						      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">FAQ</a>
+				    	</div>
+			  		</div>
+				</nav>
+			</div>
+	</div>
+
+			<div class="col-sm-12 col-md-12  ">
 				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		  			<div class="carousel-inner">
 		    			<div class="carousel-item active">
@@ -60,56 +92,50 @@
 		  			</a>
 		  		</div>
 			</div>
-
- 	 	</div>
-	</div>
-  <div class="contenedorNavbar">
-				<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-				  <a class="navbar-brand" href="#">Novedades </a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  </button>
-				  	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				    	<div class="navbar-nav">
-						      <a class="nav-item nav-link active" href="#">Resumenes<span class="sr-only">(current)</span></a>
-						      <a class="nav-item nav-link" href="#">Recomendaciones</a>
-						      <a class="nav-item nav-link" href="#">Busqueda</a>
-						      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">FAQ</a>
-				    	</div>
-			  		</div>
-				</nav>
-			</div>
 	<section class="contenedor-peliculas">
 		<div class="row">
-			<div class="col-sm-12 col-md-3  ">
+				<div class="col-sm-1 col-md-2  ">
+						<div class="peliculas">
+							<img src=""class="img-fluid">
+							<h4>columna banner</h4>
+						</div>
+						</div>
+			<div class="col-sm-12 col-md-2  ">
 		<div class="peliculas">
 			<img src=".././img/joker.jpg"class="img-fluid">
 			<h4>TITUTLO</h4>
 			<h5>TRAILER Y DESCRICION</h5>
 		</div>
 		</div>
-		<div class="col-sm-12 col-md-3  ">
+		<div class="col-sm-12 col-md-2  ">
 		<div class="peliculas">
 			<img src=".././img/malefica.jpg"class="img-fluid">
 			<h4>TITULO</h4>
 			<h5>TRAILER Y DESCRICION</h5>
 		</div>
 		</div>
-		<div class="col-sm-12 col-md-3  ">
+		<div class="col-sm-12 col-md-2  ">
 		<div class="peliculas">
 			<img src=".././img/familiaAddams.jpg"class="img-fluid">
 			<h4>TITULO</h4>
 			<h5>TRAILER Y DESCRICION</h5>
 		</div>
 		</div>
-		<div class="col-sm-12 col-md-3  ">
+		<div class="col-sm-12 col-md-2  ">
 		<div class="peliculas">
 			<img src=".././img/doctorSueño.jpg"class="img-fluid">
 			<h4>TITULO</h4>
 			<h5>TRAILER Y DESCRICION</h5>
 		</div>
 	</div>
+	<div class="col-sm-1 col-md-2  ">
+			<div class="peliculas">
+				<img src=""class="img-fluid">
+				<h4>columna banner</h4>
+			</div>
+			</div>
 	</div>
+</section>
 		
 
 

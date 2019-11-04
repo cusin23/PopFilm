@@ -1,57 +1,29 @@
-
-.contenedor-columnas{
-	width: 100%;
-	margin: auto;
-
-}
 .contenedor-peliculas{
-	width: 80%;
+	width: 100%;
 	margin: auto;
 }
 .peliculas{
-	width: 80%;
+	width: 100%;
 	float: auto;
 
 }
-.columnas{
-	width: 50%;
-	float: left;
-
-}
-
-.cuerpoPopFilm{
-
-	background: #373737;
-}
-
-.titulo1{
-
-	/*AQUÍ LE AÑADO EL CÓDIGO DE CSS NECESARIO PARA APLICAR LA FONT*/
-	/*font-family: 'Permanent Marker', cursive;*/
-	font-family: 'Luckiest Guy', cursive;
-	color: #f4f4f4;
-	text-align: center;
-	margin-top: 25px;
-	font-size: 5rem;
-		}
-
 .navbar{
 
 	height: 45px;
 	background: #c0b283;
 		}
 
-
-.contenedorGeneral{
-
-	background: #a9a9a9;
-
-	width: 82rem;
-	margin: 0 auto;
-	height: 200px;
-	margin-top: 50px;
-}
 .logo{
-	width: 100%;
+	width: 50%;
 	height: auto;
 }
+.form-inline{
+	width: 150%;
+	height: 100%;
+	margin-left:40% ;
+	margin-top: 50% ;
+}
+.contenedor-superior{
+	background: #c0b283;
+}
+
