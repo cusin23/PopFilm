@@ -35,22 +35,28 @@
 </head>
 <body background="../img/fondo2.jpg">
 	<!--creamos una seccon para dividir mejor las partes de nuestra pagina-->
-	<section class="contenedor-superior">
+	<div class="container-fluid">
 		<!--creamos un elemento row para tener varios objetos en la misma linea-->
 		<div class="row">
 			<!--indicamos el tamaño que tendra el primer elemento tanto en dispositivos con pantalla pequeña(sm),mediana(md) y grande(lg)-->
-                <div class="col-sm-12 col-md-3 "><div class="logo">
+                <div class="col-sm-12 col-md-3 ">
+					<div class="logo">
                         <img src="../img/PF2.5.png" class="img-fluid">
-					</div></div>
+					</div>
+				</div>
 					<!--repetimos el mismo paso con el segundo elemento de la fila-->
                 <div class="col-sm-12 col-md-9 ">
 						<form class="form-inline my-2 my-lg-0 ">
-                                <input class="form-control coy-sm-2 col-md-4" type="search" placeholder="Encuentra tu película favorita" aria-label="Search">
-                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                              </form>
+                            <input class="form-control coy-sm-2 col-md-7" type="search" placeholder="Encuentra tu película favorita" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                        </form>
 				</div>
 		</div>
-		</section>
+	</div>
+
+
+
+	
 			
  	 	  <div class="contenedorNavbar">
 				<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
@@ -93,7 +99,7 @@
 		  			</a>
 		  		</div>
 			</div>
-	<section class="contenedor-peliculas">
+	<div class="container-fluid">
 		<div class="row">
 				<div class="col-sm-1 col-md-2  ">
 						<div class="peliculas">
@@ -136,7 +142,7 @@
 			</div>
 			</div>
 	</div>
-</section>
+</div>
 		
 
 

@@ -18,12 +18,15 @@
 	height: auto;
 }
 .form-inline{
-	width: 150%;
+	width: 100%;
 	height: 100%;
-	margin-left:40% ;
 	margin-top: 50% ;
 }
-.contenedor-superior{
+.form-control{
+	margin-left:30%;
+}
+.container{
 	background: #c0b283;
+	
 }
 
