@@ -1,6 +1,5 @@
-.Body{
-	height:100%;
-	width:100%;
+.imagen{
+	background-image: url("../img/FondoBody.jpg");
 }
 .contenedor-peliculas{
 	width: 100%;
@@ -19,7 +18,7 @@
 		}
 
 .logo{
-	width: 50%;
+	width: 70%;
 	height: auto;
 	margin-top:3%;
 	margin-left:8%;
