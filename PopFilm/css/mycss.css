@@ -37,6 +37,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 .form-control{
 	margin-left:30%;
 }
+.header{
+	background: #c59b26;
+}
 .container{
 	background: #000000;
 	
