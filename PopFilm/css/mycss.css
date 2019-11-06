@@ -9,6 +9,7 @@
 .peliculas{
 	width: 100%;
 	float: auto;
+	margin-top:20px;
 
 }
 .navbar{
@@ -20,6 +21,8 @@
 .logo{
 	width: 50%;
 	height: auto;
+	margin-top:3%;
+	margin-left:8%;
 }
 .form-inline{
 	width: 100%;
@@ -32,5 +35,9 @@
 .container{
 	background: #c0b283;
 	
+}
+.carousel-inner{
+	height:100%;
+	width:100%;
 }
 
