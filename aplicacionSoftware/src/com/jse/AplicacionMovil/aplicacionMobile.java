@@ -34,6 +34,25 @@ public class aplicacionMobile extends AplicacionSoftware {
 		this.permisos = permisos;
 	}
 	
+	// METHODS 
+	
+		//imprimir Stack tecnológico -> Método que imprime por consola 
+		//“El lenguaje de programación utilizado es X, utiliza tecnología híbrida” 
+		//si el atributo tecnología híbrida es true o si es false imprimir: 
+		//“El lenguaje de programación utilizado es X, utiliza tecnología nativa”
+		
+		
+		public String imprimirStackTecnologico() {
+			if (hibrydTecnology = true) {
+				return "El lenguaje de programacion utilizado es ".concat(getLenguajeProgramacion()) + ". Utiliza tecnología híbrida.";
+				
+			} else if(hibrydTecnology = false) {
+				return "El lenguaje de programación utilizado es ".concat(getLenguajeProgramacion()) + ". Utiliza tecnología nativa.";
+			}
+			
+			return imprimirStackTecnologico();
+		}
+	
 	// GETTER AND SETTER
 
 	public boolean isHibrydTecnology() {
@@ -61,21 +80,4 @@ public class aplicacionMobile extends AplicacionSoftware {
 				+ isAlmacenaInfEnBD() + ", getLineasCodigo()=" + getLineasCodigo() + ", getComplejidad()="
 				+ getComplejidad() + ", getNumCasosTest()=" + getNumCasosTest() + "]";
 	}
-	
-	// METHODS 
-	
-	//imprimir Stack tecnológico -> Método que imprime por consola 
-	//“El lenguaje de programación utilizado es X, utiliza tecnología híbrida” 
-	//si el atributo tecnología híbrida es true o si es false imprimir: 
-	//“El lenguaje de programación utilizado es X, utiliza tecnología nativa”
-	
-	
-
-	
-	
-	
-	
-	
-	
-
 }

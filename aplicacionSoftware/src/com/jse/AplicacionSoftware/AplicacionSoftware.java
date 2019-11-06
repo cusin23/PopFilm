@@ -5,21 +5,21 @@
 package com.jse.AplicacionSoftware;
 
 public abstract class AplicacionSoftware {
-	
+
 	// Atributos
-	
+
 	private String lenguajeProgramacion;
 	private boolean almacenaInfEnBD;
 	private long lineasCodigo;
 	private double complejidad;
 	private int numCasosTest;
-	
+
 	// Constructor vacio
 	// ¿Porqué el constructor da error al ponerle public delante?
-	
+
 	public AplicacionSoftware() {
 	}
-	
+
 	// Constructor Sobrecargado
 	// ¿Porqué este constructor ya sobrecargado admite el public delante?
 
@@ -28,15 +28,46 @@ public abstract class AplicacionSoftware {
 		super();
 		this.lenguajeProgramacion = lenguajeProgramacion;
 		this.almacenaInfEnBD = almacenaInfEnBD;
-		
-	// Estos sin los atributos que se cogen como base para crear el method
-	// que nos pide el ejercicio.
-		
+
+		// Estos sin los atributos que se cogen como base para crear el method
+		// que nos pide el ejercicio.
+
 		this.lineasCodigo = lineasCodigo;
 		this.complejidad = complejidad;
 		this.numCasosTest = numCasosTest;
 	}
-	
+
+	// METHODS
+
+	// calcularCalidad que devuelva un double que representará la calidad
+	// del código y se calcula en base a los atributos complejidad,
+	// número líneas de código y número casos de test:
+	// Creamos una variable con valor 100.0
+	// Si la complejidad está entre 11 y 20 entonces restamos 10
+	// Si la complejidad está entre 21 y 50 entonces restamos 30
+	// Si la complejidad es mayor que 50 restamos 50
+	// Si el LoC es mayor de 50000 y el número de casos de test menor que 3000
+	// entonces restamos 20
+
+	public double calcularCalidad() {
+
+		double calidad = 100;
+		if (complejidad >= 11.0 && complejidad <= 20.0) {
+			calidad = calidad - 10;
+
+		} else if (complejidad >= 21.0 && complejidad <= 50.0) {
+			calidad = calidad - 30;
+
+		} else if (complejidad > 50.0) {
+			calidad = calidad - 50;
+
+		} else if (lineasCodigo > 50000 && numCasosTest < 3000) {
+			calidad = calidad - 20;
+		}
+
+		return calidad;
+	}
+
 	// GETTER AND SETTER
 
 	public String getLenguajeProgramacion() {
@@ -78,7 +109,7 @@ public abstract class AplicacionSoftware {
 	public void setNumCasosTest(int numCasosTest) {
 		this.numCasosTest = numCasosTest;
 	}
-	
+
 	// TO STRING
 
 	@Override
@@ -87,32 +118,5 @@ public abstract class AplicacionSoftware {
 				+ almacenaInfEnBD + ", lineasCodigo=" + lineasCodigo + ", complejidad=" + complejidad
 				+ ", numCasosTest=" + numCasosTest + "]";
 	}
-	
-	// METHODS
-	
-	// calcularCalidad que devuelva un double que representará la calidad 
-	// del código y 	se calcula en base a los atributos complejidad, 
-	// número líneas de código y número casos de test:
-	// Creamos una variable con valor 100.0		
-	// Si la complejidad está entre 11 y 20 entonces restamos 10		
-	// Si la complejidad está entre 21 y 50 entonces restamos 30		
-	// Si la complejidad es mayor que 50 restamos 50 							
-	// Si el LoC es mayor de 50000 y el número de casos de test menor que 3000 
-	// entonces restamos 20
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

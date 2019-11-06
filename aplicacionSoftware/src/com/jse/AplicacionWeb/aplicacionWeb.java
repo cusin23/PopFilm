@@ -7,7 +7,7 @@ package com.jse.AplicacionWeb;
 
 import com.jse.AplicacionSoftware.AplicacionSoftware;
 
-public class aplicacionWeb extends AplicacionSoftware {
+public class aplicacionWeb extends AplicacionSoftware implements AplicacionWebService {
 
 	// Atributos
 
@@ -25,6 +25,28 @@ public class aplicacionWeb extends AplicacionSoftware {
 		super();
 		this.frameworkBackendName = frameworkBackendName;
 		this.frameworkFrontendName = frameworkFrontendName;
+	}
+
+	// METHODS
+
+	// imprimir Stack tecnológico -> Método que imprime por consola
+	// “El lenguaje de programación utilizado es X, el framework de backend es Y
+	// y el framework de frontend es Z”. En X, Y, Z habrá que poner los valores de
+	// los atributos correspondientes. Utilizar la función concat para imprimir la
+	// cadena total.
+
+	public String imprimirStackTecnologico() {
+		return "El lenguaje de programación utilizado es: ".concat(getLenguajeProgramacion()) + ". "
+				+ "El framework de backend es: ".concat(frameworkBackendName) + ". "
+				+ "El framework de frontend es: ".concat(frameworkFrontendName) + ".";
+	}
+	
+	// Este metodo y su implementacion desde la interface no lo tengo del todo claro, esta pendiente de revisión.
+	
+	@Override
+	public String crearAplicacionWeb() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	// GETTER AND SETTER
@@ -55,14 +77,6 @@ public class aplicacionWeb extends AplicacionSoftware {
 				+ ", getComplejidad()=" + getComplejidad() + ", getNumCasosTest()=" + getNumCasosTest() + "]";
 	}
 
-	// MÉTODO A CREAR
-
-	// imprimir Stack tecnológico -> Método que imprime por consola
-	// “El lenguaje de programación utilizado es X, el framework de backend es Y
-	// y el framework de frontend es Z”. En X, Y, Z habrá que poner los valores de
-	// los atributos correspondientes. Utilizar la función concat para imprimir la
-	// cadena total.
-	
 	
 
 }

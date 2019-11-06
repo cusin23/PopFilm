@@ -29,6 +29,36 @@ public class aplicacionIoT extends AplicacionSoftware {
 		this.enumeracion = enumeracion;
 	}
 	
+	// METHODS 
+	
+		// Imprimir Stack tecnológico -> Método que imprime por consola 
+		// “El lenguaje de programación utilizado es X, el protocolo utilizado es Y”. 
+		// Reeemplazar X e Y por los valores correspondientes.
+
+		
+		public String imprimirStackTecnologico() {
+			
+			enumeracion = getEnumeracion();
+			
+			switch(enumeracion) {
+			
+			case HTTP:
+						//System.out.println(getEnumeracion());
+				break;
+			
+			case AMQP:
+						//System.out.println(getEnumeracion());
+				break;
+				
+			case MQTT:
+						//System.out.println(getEnumeracion());
+				break;
+			}
+			
+			return "El lenguaje de programacion utilizado es ".concat(getLenguajeProgramacion())
+					+ " y el protocolo utilizado es " + getEnumeracion() + ".";
+			}
+	
 	// GETTER AND SETTER
 
 	public boolean isGraphicalInterface() {
@@ -65,19 +95,7 @@ public class aplicacionIoT extends AplicacionSoftware {
 				+ ", getComplejidad()=" + getComplejidad() + ", getNumCasosTest()=" + getNumCasosTest() + "]";
 	}
 	
-	// METHODS 
-	
-	// Imprimir Stack tecnológico -> Método que imprime por consola 
-	// “El lenguaje de programación utilizado es X, el protocolo utilizado es Y”. 
-	// Reeemplazar X e Y por los valores correspondientes.
-
 	
 	
 	
-	
-	
-	
-	
-	
-
 }
