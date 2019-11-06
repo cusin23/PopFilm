@@ -17,7 +17,7 @@ background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(226,192,22,1) 18%
 background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(226,192,22,1) 18%,rgba(226,192,22,1) 39%,rgba(226,192,22,1) 45%,rgba(226,192,22,1) 52%,rgba(226,192,22,1) 60%,rgba(226,192,22,1) 82%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(226,192,22,1) 18%,rgba(226,192,22,1) 39%,rgba(226,192,22,1) 45%,rgba(226,192,22,1) 52%,rgba(226,192,22,1) 60%,rgba(226,192,22,1) 82%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
-
+padding: 10%;
 }
 .row{
 	color: white;
