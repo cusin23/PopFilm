@@ -1,5 +1,3 @@
-.imagen{
-	background-image: url("../img/FondoBody.jpg");
 .fondo{
 /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,e2c016+18,e2c016+39,e2c016+45,e2c016+52,e2c016+60,e2c016+82,000000+100 */
 background: rgb(0,0,0); /* Old browsers */
@@ -40,7 +38,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	margin-left:30%;
 }
 .container{
-	background: #c0b283;
 	background: #000000;
 	
 }
