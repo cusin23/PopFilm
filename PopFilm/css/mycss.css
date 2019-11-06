@@ -1,5 +1,6 @@
-.fondo{
-	background="../img/FondoBody.jpg";
+.Body{
+	height:100%;
+	width:100%;
 }
 .contenedor-peliculas{
 	width: 100%;
