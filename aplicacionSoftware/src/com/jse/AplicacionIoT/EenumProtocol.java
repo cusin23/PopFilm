@@ -5,8 +5,4 @@
  */
 package com.jse.AplicacionIoT;
 
-public enum EenumProtocol {
-	
-	HTTP, AMQP, MQTT, DNS, UDP
-
-}
+public enum EenumProtocol {HTTP, AMQP, MQTT}
