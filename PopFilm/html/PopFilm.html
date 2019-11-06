@@ -18,6 +18,8 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Con este meta le decimos al navegador que el ancho de la pagina sea igual que el ancho del dispositivo y que no agrande ni reduzca los elementos que estan dentro -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--copiamos las direcciones de enlace de las bibliotecas de css y JS de Bootstrap para poder utilizar sus elementos-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -33,7 +35,7 @@
 </head>
 <body class="fondo" >
 <!--creamos una seccon para dividir mejor las partes de nuestra pagina-->
-	<header>
+	<header class="header-main" id="header-main">
 		<div class="container">
 			<!--creamos un elemento row para tener varios objetos en la misma linea-->
 			<div class="row fondoheader">
@@ -51,7 +53,7 @@
 							</form>
 					</div>
 			</div>
-		
+		<!-- Aqui tenemos la navbar -->
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<a class="navbar-brand" href="PopFilm.html"><img src="../img/favicon.png" width="30" height="30" alt=""></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,9 +72,17 @@
 								Género
 								</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+									<a class="dropdown-item" href="#">Animación</a>
+									<a class="dropdown-item" href="#">Bélico</a>
+									<a class="dropdown-item" href="#">Ciencia Ficción</a>
+									<a class="dropdown-item" href="#">Comedia</a>
+									<a class="dropdown-item" href="#">Documetal</a>
+									<a class="dropdown-item" href="#">Drama</a>
+									<a class="dropdown-item" href="#">Musical</a>
+									<a class="dropdown-item" href="#">Romantico</a>
+									<a class="dropdown-item" href="#">Suspense</a>
 									<a class="dropdown-item" href="#">Terror</a>
-									<a class="dropdown-item" href="#">Comedia</a>
-									<a class="dropdown-item" href="#">Comedia</a>
+									<a class="dropdown-item" href="#">Thriller</a>
 								</div>
 							</li>
 							<li class="nav-item dropdown">
@@ -80,8 +90,8 @@
 							Series
 							</a>
 								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="#">Netflix</a>
 									<a class="dropdown-item" href="#">Amazon Prime Video</a>
+									<a class="dropdown-item" href="#">Netflix</a>
 								</div>
 							</li>
 						</ul>
@@ -143,6 +153,66 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">
+					<div class="col-sm-12 col-md-3 ">
+						<div class="peliculas">
+							<img src=".././img/joker.jpg"class="img-fluid">
+							<h4>TITUTLO</h4>
+							<h5>TRAILER Y DESCRICION</h5>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-3 ">
+						<div class="peliculas">
+							<img src=".././img/joker.jpg"class="img-fluid">
+							<h4>TITUTLO</h4>
+							<h5>TRAILER Y DESCRICION</h5>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-3">
+						<div class="peliculas">
+							<img src=".././img/familiaAddams.jpg"class="img-fluid">
+							<h4>TITULO</h4>
+							<h5>TRAILER Y DESCRICION</h5>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-3">
+						<div class="peliculas">
+							<img src=".././img/doctorSueño.jpg"class="img-fluid">
+							<h4>TITULO</h4>
+							<h5>TRAILER Y DESCRICION</h5>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+						<div class="col-sm-12 col-md-3 ">
+							<div class="peliculas">
+								<img src=".././img/joker.jpg"class="img-fluid">
+								<h4>TITUTLO</h4>
+								<h5>TRAILER Y DESCRICION</h5>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-3 ">
+							<div class="peliculas">
+								<img src=".././img/joker.jpg"class="img-fluid">
+								<h4>TITUTLO</h4>
+								<h5>TRAILER Y DESCRICION</h5>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-3">
+							<div class="peliculas">
+								<img src=".././img/familiaAddams.jpg"class="img-fluid">
+								<h4>TITULO</h4>
+								<h5>TRAILER Y DESCRICION</h5>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-3">
+							<div class="peliculas">
+								<img src=".././img/doctorSueño.jpg"class="img-fluid">
+								<h4>TITULO</h4>
+								<h5>TRAILER Y DESCRICION</h5>
+							</div>
+						</div>
+					</div>
 	</div>
 </body>
 <footer class="footer">
