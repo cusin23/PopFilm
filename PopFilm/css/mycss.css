@@ -1,3 +1,6 @@
+.fondo{
+	background="../img/FondoBody.jpg";
+}
 .contenedor-peliculas{
 	width: 100%;
 	margin: auto;
