@@ -24,14 +24,14 @@ public class aplicacionMobile extends AplicacionSoftware {
 	// Constructor vacio
 	
 	public aplicacionMobile() {
+		super();
 	}
 	
 	// Constructor Sobrecargado
 
-	public aplicacionMobile(boolean hibrydTecnology, String[] permisos) {
-		super();
-		this.hibrydTecnology = hibrydTecnology;
-		this.permisos = permisos;
+	public aplicacionMobile(String lenguajeProgramacion, boolean almacenaInfEnBD, long lineasCodigo, double complejidad, int numCasosTest) {
+		super(lenguajeProgramacion, almacenaInfEnBD, lineasCodigo, complejidad, numCasosTest);
+		
 	}
 	
 	// METHODS 

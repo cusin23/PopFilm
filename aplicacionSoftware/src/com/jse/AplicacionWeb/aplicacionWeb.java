@@ -7,7 +7,7 @@ package com.jse.AplicacionWeb;
 
 import com.jse.AplicacionSoftware.AplicacionSoftware;
 
-public class aplicacionWeb extends AplicacionSoftware implements AplicacionWebService {
+public class aplicacionWeb extends AplicacionSoftware {
 
 	// Atributos
 
@@ -17,14 +17,14 @@ public class aplicacionWeb extends AplicacionSoftware implements AplicacionWebSe
 	// Constructor vacio
 
 	public aplicacionWeb() {
+		super();
 	}
 
 	// Constructor Sobrecargado
 
-	public aplicacionWeb(String frameworkBackendName, String frameworkFrontendName) {
-		super();
-		this.frameworkBackendName = frameworkBackendName;
-		this.frameworkFrontendName = frameworkFrontendName;
+	public aplicacionWeb(String lenguajeProgramacion, boolean almacenaInfEnBD, long lineasCodigo, double complejidad, int numCasosTest, String frameworkFrontEndName, String frameworkBackEndName) {
+		super(lenguajeProgramacion, almacenaInfEnBD, lineasCodigo, complejidad, numCasosTest);
+		
 	}
 
 	// METHODS
@@ -43,11 +43,11 @@ public class aplicacionWeb extends AplicacionSoftware implements AplicacionWebSe
 	
 	// Este metodo y su implementacion desde la interface no lo tengo del todo claro, esta pendiente de revisión.
 	
-	@Override
-	public String crearAplicacionWeb() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+//	@Override
+//	public String crearAplicacionWeb() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
 
 	// GETTER AND SETTER
 

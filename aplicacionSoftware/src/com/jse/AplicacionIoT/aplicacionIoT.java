@@ -18,15 +18,14 @@ public class aplicacionIoT extends AplicacionSoftware {
 	// Constructor vacio 
 	
 	public aplicacionIoT() {
+		super();
 	}
 	
 	// Constructor Sobrecargado
 
-	public aplicacionIoT(boolean graphicalInterface, boolean wifiAccess, EenumProtocol enumeracion) {
-		super();
-		this.graphicalInterface = graphicalInterface;
-		this.wifiAccess = wifiAccess;
-		this.enumeracion = enumeracion;
+	public aplicacionIoT(String lenguajeProgramacion, boolean almacenaInfEnBD, long lineasCodigo, double complejidad, int numCasosTest) {
+		super(lenguajeProgramacion, almacenaInfEnBD, lineasCodigo, complejidad, numCasosTest);
+		
 	}
 	
 	// METHODS 
