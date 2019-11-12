@@ -75,7 +75,7 @@ padding-right: 8%;
 	display: inline-block;
 	color:#fff;
 	background: #000;
-	padding: 0 0 10px 15px;
+	padding: 10px 15px;
 	text-decoration: none;
 	-webkit-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
@@ -90,7 +90,7 @@ padding-right: 8%;
  
 .social ul li a:hover {
 	background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
-	padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	padding: 0 0 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
 }
 
 .img-fluid:hover{
