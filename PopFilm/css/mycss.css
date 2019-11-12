@@ -31,6 +31,8 @@ padding-right: 10%;
 .peliculas{
 	margin-left: 8.5%;
 	margin-top:20px;
+
+	
 }
 .form-inline{
 	width: 100%;
@@ -89,4 +91,9 @@ padding-right: 10%;
 .social ul li a:hover {
 	background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
 	padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+
+.img-fluid:hover{
+	filter: brightness(1.25);
+	transition: all 0.5s ease;
 }
