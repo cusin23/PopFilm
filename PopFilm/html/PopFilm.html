@@ -5,9 +5,9 @@
 <!--
          ___         ___           ___         ___                                   ___     
         /  /\       /  /\         /  /\       /  /\      ___                        /__/\    
-       /  /::\     /  /::\       /  /::\     /  /:/_    /  /\                      |  |::\    
-      /  /:/\:\   /  /:/\:\     /  /:/\:\   /  /:/ /\  /  /:/      ___     ___     |  |:|:\  
-     /  /:/~/:/  /  /:/  \:\   /  /:/~/:/  /  /:/ /:/ /__/::\     /__/\   /  /\  __|__|:|\:\ 
+       /  /::\     /  /::\       /  /::\     /  /:/_    /  /\     ___              |  |::\    
+      /  /:/\:\   /  /:/\:\     /  /:/\:\   /  /:/ /\  /  /:/    /__/\     ___     |  |:|:\  
+     /  /:/~/:/  /  /:/  \:\   /  /:/~/:/  /  /:/ /:/ /__/::\    \  \ \   /  /\  __|__|:|\:\ 
     /__/:/ /:/  /__/:/ \__\:\ /__/:/ /:/  /__/:/ /:/  \__\/\:\__  \  \:\ /  /:/ /__/::::| \:\
     \  \:\/:/   \  \:\ /  /:/ \  \:\/:/   \  \:\/:/      \  \:\/\  \  \:\  /:/  \  \:\~~\__\/
      \  \::/     \  \:\  /:/   \  \::/     \  \::/        \__\::/   \  \:\/:/    \  \:\      
@@ -30,37 +30,43 @@
 </head>
 <body>
 	<nav >
-		<div>
+		<div class="img">
 			<img src="../img/PF2.5.png" alt="">
 		</div>
 		<ul>
 			<li>
 				<input type="text" id="buscador" placeholder="!!Busca tu favorita¡¡">
 			</li>
-			<a href="http://www.google.es">
+			<a href="../html/PopFilm.html">
 				<li>
 					<div class="barra"></div>
 					<p class="menu">Inicio</p>
 				</li>
 			</a>
-			<li>
-				<div class="barra"></div>
-				<p class="menu">Carterela</p>
-			</li>
-			<li>
-				<div class="barra"></div>
-				<p class="menu">Estrenos</p>
-			</li>
-
-			<li>
-				<div class="barra"></div>
-				<p class="menu">Nosotros</p>
-			</li>
-
-			<li>
-				<div class="barra"></div>
-				<p class="menu">Contacto</p>
-			</li>
+			<a href="../html/Cartelera.html">
+				<li>
+					<div class="barra"></div>
+					<p class="menu">Carterela</p>
+				</li>
+			</a>
+			<a href="../html/Estrenos.html">
+				<li>
+					<div class="barra"></div>
+					<p class="menu">Estrenos</p>
+				</li>
+			</a>
+			<a href="#">
+				<li>
+					<div class="barra"></div>
+					<p class="menu">Genero</p>
+				</li>
+			</a>
+			<a href="#">
+				<li>
+					<div class="barra"></div>
+					<p class="menu">Series</p>
+				</li>
+			</a>
 		</ul>
 		<div class="social">
 			<ul>
@@ -76,6 +82,36 @@
 			<p>| FAQs | About |</p>
 		</div>
 	</nav>
+	<div id="contenedor_principal">
+			<!--Primera Imagen-->
+			<div class="imagen">
+				<div class="imgiqz"><img src="../img/PF2.5.png"></div>
+			</div>
+			
+			<!--Segunda Imagen-->
+			<div class="imagen">
+				<div class="imgcent"><img src="../img/logo_CE.svg"></div>
+			</div>
+			
+			<!--tercera Imagen-->
+			<div class="imagen">
+				<div class="imgder"><img src="../img/logo_fundacion.png"></div>
+			</div>
+			<div class="texto">
+				<h1 class="bnb">
+					Bienvenidos a PopFilm ©.
+				</h1>
+				<p class="desc">
+					Una página web dedica a cine, lo que viene siendo una filmoteca, en la que podras ver toda la Cartelera, los proximos Estrenos, los Generos de las peliculas que más te gustan y las series de Amazon Prime Video y Netflix.
+				</p>
+				<p class="regis">
+					Para poder entrar solo tienes que registrarte.
+				</p>
+				<p class="start">
+					¿ENTRAMOS?
+				</p>
+			</div>
+	</div>
 </body>
 
 </html>

@@ -83,8 +83,8 @@ li:hover p.menu{
 }
 
 div.social {
-	margin-left: 8%; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
-	margin-top:60%; /* Bajamos la barra un 60% de arriba a abajo */
+	margin-left: 9%; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla. */
+	margin-top:60%; /* Bajamos la barra un 60% de arriba a abajo. */
 	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
  
@@ -100,21 +100,74 @@ div.social ul a {
 	text-decoration: none;
 	-webkit-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	transition:all 500ms ease; /* Establecemos una transición a todas las propiedades. */
 }
  
-div.social ul .icon-facebook2 {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+div.social ul .icon-facebook2 {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class. */
 div.social ul .icon-twitter {background: #00abf0;}
 div.social ul .icon-pinterest2 {background: #ae181f;}
 div.social ul .icon-instagram {background: #fd1d1d;}
 div.social ul .icon-envelop {background: #666666;}
  
 div.social ul a:hover {
-	background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+	background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse. */
 }
 div.footer{
 	margin-top: 35%;
 	text-align:center;
 	color:white;
-
 }
+div.imgizq{
+	padding-top: 1%;
+	height: 30%;
+	width: 30%;
+}
+div.imgcent{
+	padding-top: 15%;
+	height: 100%;
+	width: 100%;
+}
+div.imgder{
+	padding-top: 15%;
+	height: 60%;
+	width: 60%;
+}
+
+#contenedor_principal{
+	background-color: #00abf0;
+	margin-right: 25px;
+	margin-top: 25px;
+	width:1570px;
+	height:890px;
+	float: right;
+	align-items: flex-start;
+	
+}
+.imagen{
+	width:400px;
+	height:auto;
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	overflow:hidden;
+}
+div.texto{
+	text-align:center;
+	font-family: helvetica Neue;
+	font-weight: lighter;
+}
+h1.bnb{
+	font-size: 3em;
+	
+}
+p.desc{
+	font-size: 2em;
+	text-align: justify;
+}
+p.regis{
+	font-size: 2em;
+}
+p.start{
+	font-size: 3em;
+}
+	
