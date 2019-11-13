@@ -36,70 +36,37 @@
 </head>
 <body class="fondo" >
 <!--creamos una seccon para dividir mejor las partes de nuestra pagina-->
-	<header class="header-main" id="header-main">
-		<div class="container">
-			<!--creamos un elemento row para tener varios objetos en la misma linea-->
-			<div class="row fondoheader">
-				<!--indicamos el tamaño que tendra el primer elemento tanto en dispositivos con pantalla pequeña(sm),mediana(md) y grande(lg)-->
-					<div class="col-sm-12 col-md-3 ">
-						<div class="logo">
-							<img src="../img/PF2.5.png" class="img-fluid">
-						</div>
-					</div>
-						<!--repetimos el mismo paso con el segundo elemento de la fila-->
-					<div class="col-sm-12 col-md-9 ">
-							<form class="form-inline my-2 my-lg-0 ">
-								<input class="form-control coy-sm-2 col-md-7" type="search" placeholder="Encuentra tu película favorita" aria-label="Search">
-								<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-							</form>
-					</div>
-			</div>
-		<!-- Aqui tenemos la navbar -->
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="PopFilm.html"><img src="../img/favicon.png" width="30" height="30" alt=""></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-					<div class="collapse navbar-collapse" id="navbarNavDropdown">
-						<ul class="navbar-nav">
-							<li class="nav-item active">
-								<a class="nav-link" href="Cartelera.html">Cartelera <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="Estrenos.html">Estrenos</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Género
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="#">Animación</a>
-									<a class="dropdown-item" href="#">Bélico</a>
-									<a class="dropdown-item" href="#">Ciencia Ficción</a>
-									<a class="dropdown-item" href="#">Comedia</a>
-									<a class="dropdown-item" href="#">Documetal</a>
-									<a class="dropdown-item" href="#">Drama</a>
-									<a class="dropdown-item" href="#">Musical</a>
-									<a class="dropdown-item" href="#">Romantico</a>
-									<a class="dropdown-item" href="#">Suspense</a>
-									<a class="dropdown-item" href="#">Terror</a>
-									<a class="dropdown-item" href="#">Thriller</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Series
-							</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="#">Amazon Prime Video</a>
-									<a class="dropdown-item" href="#">Netflix</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-			</nav>	
-		</div>
-	</header>
+	<nav>
+		<ul>
+			<li>
+				<input type="text" id="buscador" placeholder="search...">
+			</li>
+			<a href="http://www.google.es">
+				<li>
+					<div class="barra"></div>
+					<p class="menu">Inicio</p>
+				</li>
+			</a>
+			<li>
+				<div class="barra"></div>
+				<p class="menu">Tutoriales</p>
+			</li>
+			<li>
+				<div class="barra"></div>
+				<p class="menu">Videos</p>
+			</li>
+
+			<li>
+				<div class="barra"></div>
+				<p class="menu">Nosotros</p>
+			</li>
+
+			<li>
+				<div class="barra"></div>
+				<p class="menu">Contacto</p>
+			</li>
+		</ul>
+	</nav>
 	<div class="social">
 			<ul>
 				<li><a href="https://www.facebook.com/popfilm.java.52" target="_blank" class="icon-facebook2"></a></li>
