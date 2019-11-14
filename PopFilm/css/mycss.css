@@ -117,10 +117,13 @@ div.footer{
 	text-align:center;
 	color:white;
 }
-div.imgizq{
-	padding-top: 1%;
-	height: 30%;
-	width: 30%;
+.imagen{
+	width:26em;
+	height:auto;
+	margin-left: 18em;
+	display:inline-block;
+	vertical-align:top;
+	overflow:hidden;
 }
 div.imgcent{
 	padding-top: 15%;
@@ -134,6 +137,7 @@ div.imgder{
 }
 
 #contenedor_principal{
+	position:initial;
 	background-color: #00abf0;
 	margin-right: 1.2em;
 	margin-top: 1.2em;
@@ -141,33 +145,26 @@ div.imgder{
 	height:56em;
 	float: right;
 	align-items: flex-start;
-	
 }
-.imagen{
-	width:26em;
-	height:auto;
-	position:relative;
-	display:inline-block;
-	vertical-align:top;
-	overflow:hidden;
-}
+
 div.texto{
-	text-align:center;
+		text-align:center;
 	font-family: helvetica Neue;
 	font-weight: lighter;
 }
 h1.bnb{
+	margin-top: 2em;
 	font-size: 3em;
 	
 }
 p.desc{
+	margin-left: 7em;
+	margin-right: 7em;
+	margin-top: 2em;
 	font-size: 2em;
 	text-align: justify;
 }
-p.regis{
-	font-size: 2em;
+a.about{
+	color: white;
+	text-decoration: none;
 }
-p.start{
-	font-size: 3em;
-}
-	
