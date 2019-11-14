@@ -84,7 +84,7 @@ li:hover p.menu{
 
 div.social {
 	margin-left: 9%; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla. */
-	margin-top:60%; /* Bajamos la barra un 60% de arriba a abajo. */
+	margin-top:30%; /* Bajamos la barra un 35% de arriba a abajo. */
 	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
 }
  
@@ -167,4 +167,10 @@ p.desc{
 a.about{
 	color: white;
 	text-decoration: none;
+}
+div.login{
+	width: 2em;
+	margin-left: 8.5em;
+	padding-top: 3em;
+	
 }
