@@ -30,8 +30,8 @@ li{
 }
 p.menu{
 	position: relative;
-	padding:10px;
-	padding-right: 25px;
+	padding:0.4em;
+	padding-right: 0.6em;
 	float:right;
 	color:white;
 	opacity: .6;
@@ -53,18 +53,18 @@ li:hover div.barra{
 }
 
 input#buscador{
-	width:285px;
-	height:50px;
+	width:11.77em;
+	height:2.083em;
 	background-color: #3c3c3c;
 	outline: none;
 	border: 0;
 	color: rgb(212, 179, 32);
 	font-size: 1.5em;
 	text-align: right;
-	padding-right: 15px;
+	padding-right: 0.6em;
 	background-image: url(../img/search.png);
 	background-repeat: no-repeat;
-	background-position: 15px 15px;
+	background-position: 0.6em 0.6em;
 	transition: background-position .2s;
 	opacity: .5;
 }
@@ -96,7 +96,7 @@ div.social ul a {
 	display: inline-block;
 	color:#fff;
 	background: #000;
-	padding: 10px 15px;
+	padding: 0.7em 0.94em;
 	text-decoration: none;
 	-webkit-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
@@ -135,16 +135,16 @@ div.imgder{
 
 #contenedor_principal{
 	background-color: #00abf0;
-	margin-right: 25px;
-	margin-top: 25px;
-	width:1570px;
-	height:890px;
+	margin-right: 1.2em;
+	margin-top: 1.2em;
+	width: 98.8em;
+	height:56em;
 	float: right;
 	align-items: flex-start;
 	
 }
 .imagen{
-	width:400px;
+	width:26em;
 	height:auto;
 	position:relative;
 	display:inline-block;
