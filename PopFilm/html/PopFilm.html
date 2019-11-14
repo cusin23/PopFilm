@@ -23,6 +23,7 @@
 	<!--relacionamos nuestro documento html con el documento css para atribuirle propiedades-->
 	<link rel="stylesheet" type="text/css" href=".././css/mycss.css">
 	<link rel="stylesheet" href="../css/fonst.css">
+	<link rel="stylesheet" href="../css/login.css">
 	<!-- Aquí va el nombre de la página, que aparece en la pestaña -->
 	<title>Pop Film</title>
 	<!--insertamos un favicom-->
@@ -70,11 +71,27 @@
 			</a>
 		</ul>
 		<div class="login">
-			<ul>
-				<a href="login.html" target="_blank">
-					<img src="../img/login.png" alt="">
-				</a>
+			<ul onclick="document.getElementById('id01').style.display='block'">
+				<img src="../img/login.png">
 			</ul>
+			<div id="id01" class="modal">
+				<form class="modal-content animate" action="/action_page.php" method="post">
+					<div class="container">
+						<label for="uname"><b>Usuario</b></label>
+						<input type="text" placeholder="Tu usuario" name="uname" required>
+						<label for="psw"><b>Contraseña</b></label>
+						<input type="password" placeholder="Tu contraseña" name="psw" required>
+						<button type="submit">Entrar</button>
+						<label>
+							<input type="checkbox" checked="checked" name="remember"> Recuerdame
+						</label>
+					</div>
+					<div class="container">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+						<span class="psw">Redordar <a href="#">Contraseña?</a></span>
+					</div>
+  				</form>
+			</div>
 		</div>
 		<div class="social">
 			<ul>

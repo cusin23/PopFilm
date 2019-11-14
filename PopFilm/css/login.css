@@ -1,123 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-body {
-    background: url(../img/bg2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Roboto;
+/* Set a style for all buttons */
+button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  }
+
+button:hover {
+  opacity: 0.8;
 }
 
-.contenedor-form {
-    background: rgba(0,0,0,.7);
-    max-width: 500px;
-    width: 100%;
-    margin: 48px auto;
-    border-radius: 5px;
-    color: #fff;
-    position: relative;
-    /*padding: 40px;*/
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
 }
 
-.contenedor-form .toggle {
-    position: absolute;
-    top: 7px;
-    right: 7px;
-    width: 100px;
-    height: 30px;
-    font-size: 12px;
-    line-height: 25px;
-    text-align: center;
-    border-top: 2px solid #ff851b;
-    border-bottom: 2px solid #ff851b;
-    cursor: pointer;
-    transition: all .5s ease;
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
 }
 
-.contenedor-form .toggle:hover {
-    border-top: 2px solid #0075d9;
-    border-bottom: 2px solid #0075d9;
+.container {
+  padding: 16px;
+ }
+
+span.psw {
+  float: right;
+  padding-top: 16px;
 }
 
-.contenedor-form .toggle span {
-    letter-spacing: 1px;
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 10%;
 }
 
-.contenedor-form h2 {
-    margin: 0 0 28px 0;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1;
-}
-.contenedor-form input[type="text"],
-.contenedor-form input[type="password"],
-.contenedor-form input[type="email"] {
-    outline: none;
-    display: block;
-    width: 100%;
-    padding: 10px 15px;
-    margin: 0 0 20px 0;
-    background: rgba(0,0,0,.5);
-    color: #fff;
-    border: none;
-    border-radius: 2px;
-    border-bottom: 4px solid #ff851b;
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight:normal;
-    transition: all .5s ease;
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
 }
 
-.contenedor-form input[type="text"]:focus,
-.contenedor-form input[type="password"]:focus,
-.contenedor-form input[type="email"]:focus {
-    border-bottom: 4px solid #0075d9;
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
 }
 
-.contenedor-form input[type="submit"] {
-    background: #FF851B;
-    color: #FFF;
-    width: 100%;
-    border: none;
-    padding: 10px 0;
-    font-size: 16px;
-    font-weight: normal;
-    font-family: Roboto;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all .5s ease;
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
 }
 
-.contenedor-form input[type="submit"]:hover {
-    background: rgba(0, 117, 217, 0.7);
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
 }
 
-.contenedor-form .reset-password {
-    background: rgba(0, 117, 217, .7);
-    width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
 }
 
-.contenedor-form .reset-password a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.contenedor-form .formulario {
-    display: none;
-    padding: 40px;
-}
-
-.contenedor-form .formulario:nth-child(2) {
-    display: block;
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
 }
