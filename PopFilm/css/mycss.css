@@ -110,7 +110,7 @@ div.social ul .icon-instagram {background: #fd1d1d;}
 div.social ul .icon-envelop {background: #666666;}
  
 div.social ul a:hover {
-	background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse. */
+	background: #000; /*Cambiamos el fondo cuando el usuario pase el mouse.*/
 }
 div.footer{
 	margin-top: 35%;
