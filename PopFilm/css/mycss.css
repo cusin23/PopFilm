@@ -3,6 +3,8 @@
 	padding:0;
 	font-family: helvetica Neue;
 	font-weight: lighter;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 img{
 	position: center;
@@ -174,3 +176,28 @@ div.login{
 	padding-top: 3em;
 	
 }
+.gallery {
+	background: #EEE;
+  }
+  
+  .gallery-cell {
+	width: 28%;
+	height: 200px;
+	margin-right: 10px;
+	background: #8C8;
+	counter-increment: gallery-cell;
+  }
+  
+  .gallery-cell.is-selected {
+	background: #ED2;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+	display: block;
+	text-align: center;
+	content: counter(gallery-cell);
+	line-height: 200px;
+	font-size: 80px;
+	color: white;
+  }
