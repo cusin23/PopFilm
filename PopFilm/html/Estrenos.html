@@ -5,9 +5,9 @@
 <!--
          ___         ___           ___         ___                                   ___     
         /  /\       /  /\         /  /\       /  /\      ___                        /__/\    
-       /  /::\     /  /::\       /  /::\     /  /:/_    /  /\                      |  |::\    
-      /  /:/\:\   /  /:/\:\     /  /:/\:\   /  /:/ /\  /  /:/      ___     ___     |  |:|:\  
-     /  /:/~/:/  /  /:/  \:\   /  /:/~/:/  /  /:/ /:/ /__/::\     /__/\   /  /\  __|__|:|\:\ 
+       /  /::\     /  /::\       /  /::\     /  /:/_    /  /\     ___              |  |::\    
+      /  /:/\:\   /  /:/\:\     /  /:/\:\   /  /:/ /\  /  /:/    /__/\     ___     |  |:|:\  
+     /  /:/~/:/  /  /:/  \:\   /  /:/~/:/  /  /:/ /:/ /__/::\    \  \ \   /  /\  __|__|:|\:\ 
     /__/:/ /:/  /__/:/ \__\:\ /__/:/ /:/  /__/:/ /:/  \__\/\:\__  \  \:\ /  /:/ /__/::::| \:\
     \  \:\/:/   \  \:\ /  /:/ \  \:\/:/   \  \:\/:/      \  \:\/\  \  \:\  /:/  \  \:\~~\__\/
      \  \::/     \  \:\  /:/   \  \::/     \  \::/        \__\::/   \  \:\/:/    \  \:\      
@@ -19,221 +19,127 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- Con este meta le decimos al navegador que el ancho de la pagina sea igual que el ancho del dispositivo y que no agrande ni reduzca los elementos que estan dentro -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--copiamos las direcciones de enlace de las bibliotecas de css y JS de Bootstrap para poder utilizar sus elementos-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
-	<!--relacionamos nuestro documento html con el documento css para atribuirle propiedades-->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!--Relacionamos nuestro documento html con el documento css para atribuirle propiedades-->
 	<link rel="stylesheet" type="text/css" href=".././css/mycss.css">
 	<link rel="stylesheet" href="../css/fonst.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<link rel="stylesheet" href="../js/login.js">
+	<link rel="stylesheet" href="../js/register.js">
+	<link rel="stylesheet" href="../js/body.js">
+	<!--Aquí va el nombre de la página, que aparece en la pestaña -->
 	<title>Pop Film</title>
-	<!--insertamos un favicom-->
+	<!--Insertamos un favicom-->
 	<link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
-
 </head>
-<body class="fondo" >
-<!--creamos una seccon para dividir mejor las partes de nuestra pagina-->
-	<header class="header-main" id="header-main">
-		<div class="container">
-			<!--creamos un elemento row para tener varios objetos en la misma linea-->
-			<div class="row fondoheader">
-				<!--indicamos el tamaño que tendra el primer elemento tanto en dispositivos con pantalla pequeña(sm),mediana(md) y grande(lg)-->
-					<div class="col-sm-12 col-md-3 ">
-						<div class="logo">
-							<img src="../img/PF2.5.png" class="img-fluid">
-						</div>
-					</div>
-						<!--repetimos el mismo paso con el segundo elemento de la fila-->
-					<div class="col-sm-12 col-md-9 ">
-							<form class="form-inline my-2 my-lg-0 ">
-								<input class="form-control coy-sm-2 col-md-7" type="search" placeholder="Encuentra tu película favorita" aria-label="Search">
-								<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-							</form>
-					</div>
+<body>
+	<!-- NAVBAR -->
+	<header>
+		<nav>
+			<div>
+				<img  class="imagnav" src="../img/PF2.5.png" alt="">
 			</div>
-		<!-- Aqui tenemos la navbar -->
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<a class="navbar-brand" href="PopFilm.html"><img src="../img/favicon.png" width="30" height="30" alt=""></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-					<div class="collapse navbar-collapse" id="navbarNavDropdown">
-						<ul class="navbar-nav">
-							<li class="nav-item active">
-								<a class="nav-link" href="Cartelera.html">Cartelera <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="Estrenos.html">Estrenos</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Género
-								</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="#">Animación</a>
-									<a class="dropdown-item" href="#">Bélico</a>
-									<a class="dropdown-item" href="#">Ciencia Ficción</a>
-									<a class="dropdown-item" href="#">Comedia</a>
-									<a class="dropdown-item" href="#">Documetal</a>
-									<a class="dropdown-item" href="#">Drama</a>
-									<a class="dropdown-item" href="#">Musical</a>
-									<a class="dropdown-item" href="#">Romantico</a>
-									<a class="dropdown-item" href="#">Suspense</a>
-									<a class="dropdown-item" href="#">Terror</a>
-									<a class="dropdown-item" href="#">Thriller</a>
-								</div>
-							</li>
-							<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Series
-							</a>
-								<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="#">Amazon Prime Video</a>
-									<a class="dropdown-item" href="#">Netflix</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-			</nav>	
-		</div>
-	</header>
-	<div class="social">
-			<ul>
-				<li><a href="https://www.facebook.com/popfilm.java.52" target="_blank" class="icon-facebook2"></a></li>
-				<li><a href="https://www.twitter.com/PopfilmO" target="_blank" class="icon-twitter"></a></li>
-				<li><a href="https://www.pinterest.es/popfilmoficial/" target="_blank" class="icon-pinterest2"></a></li>
-				<li><a href="https://www.instagram.com/popfilm_oficial/" target="_blank" class="icon-instagram"></a></li>
-				<li><a href="mailto:popflimoficial@gmail.com" class="icon-envelop"></a></li>
+			<ul class="nav">
+				<li class="nav">
+					<input type="text" id="buscador" placeholder="!!Busca tu favorita¡¡">
+				</li>
+				<a href="../html/PopFilm.html">
+					<li class="nav">
+						<div class="barra"></div>
+						<p class="menu">Inicio</p>
+					</li>
+				</a>
+				<a href="../html/Cartelera.html">
+					<li  class="nav">
+						<div class="barra"></div>
+						<p class="menu">Carterela</p>
+					</li>
+				</a>
+				<a href="../html/Estrenos.html">
+					<li  class="nav">
+						<div class="barra"></div>
+						<p class="menu">Estrenos</p>
+					</li>
+				</a>
+				<a href="#">
+					<li  class="nav">
+						<div class="barra"></div>
+						<p class="menu">Genero</p>
+					</li>
+				</a>
+				<a href="#">
+					<li  class="nav">
+						<div class="barra"></div>
+						<p class="menu">Series</p>
+					</li>
+				</a>
 			</ul>
-		</div>
-	<div class="container">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img class="d-block w-100" src="../img/portada1.jpg" alt="First slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="../img/portada2.jpg" alt="Second slide">
-							</div>
-							<div class="carousel-item">
-								<img class="d-block w-100" src="../img/portada3.jpg" alt="Third slide">
-							</div>
+			<div class="login">
+				<ul class="login" onclick="document.getElementById('id01').style.display='block'">
+					<img class="login" src="../img/login.png">
+				</ul>
+				<div id="id01" class="modal">
+					<form class="modal-content animate" action="/action_page.php" method="post">
+						<div class="contmodal">
+							<label for="uname"><b>Usuario</b></label>
+							<input class="imodal" type="text" placeholder="Su usuario" name="uname" required>
+							<label for="psw"><b>Contraseña</b></label>
+							<input class="imodal" type="password" placeholder="Su contraseña" name="psw" required>
+							<button type="submit">Entrar</button>
+							<label>
+								<input class="imodal" type="checkbox" checked="checked" name="remember"> Recuerdame
+							</label>
 						</div>
-						<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-					</div>
+						<div class="contmodal">
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+							<span class="psw">Redordar <a href="#">Contraseña?</a></span>
+						</div>
+					</form>
 				</div>
-				
-			<div class="row">
-				<div class="col-sm-12 col-md-3 ">
-					<div class="peliculas">
-						<img src=".././img/joker.jpg"class="img-fluid">
-						<h4>Joker</h4>
-						<h5>TRAILER Y DESCRICION</h5>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-3 ">
-					<div class="peliculas">
-						<img src=".././img/malefica.jpg"class="img-fluid">
-						<h4>Malefica</h4>
-						<h5>TRAILER Y DESCRICION</h5>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-3">
-					<div class="peliculas">
-						<img src=".././img/familiaAddams.jpg"class="img-fluid">
-						<h4>Familia Addams</h4>
-						<h5>TRAILER Y DESCRICION</h5>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-3">
-					<div class="peliculas">
-						<img src=".././img/doctorSueño.jpg"class="img-fluid">
-						<h4>Doctor Sueño</h4>
-						<h5>TRAILER Y DESCRICION</h5>
-					</div>
+				<ul class="login" onclick="document.getElementById('id02').style.display='block'">
+					<img class="login" src="../img/register.png">
+				</ul>
+				<div id="id02" class="modalreg">
+					<form class="modal-content animate" action="/action_page.php" method="post">
+						<div class="contmodal">
+							<label for="uname"><b>Usuario</b></label>
+							<input class="imodal" type="text" placeholder="Su usuario" name="uname" required>
+							<label for="e-mail"><b>E-mail</b></label>
+							<input class="imodal" type="text" placeholder="Su e-mail" name="psw" required>
+							<label for="e-mail"><b>Repita E-mail</b></label>
+							<input class="imodal" type="text" placeholder="Repita su e-mail" name="psw" required>
+							<label for="psw"><b>Contraseña</b></label>
+							<input class="imodal" type="password" placeholder="Su contraseña" name="psw" required>
+							<label for="psw"><b>Repita contraseña</b></label>
+							<input class="imodal" type="password" placeholder="Repita su contraseña" name="psw" required>
+							<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtnreg">Cancelar</button>
+							<button class="buttonreg" type="submit">Registrame</button>
+						</div>
+					</form>
 				</div>
 			</div>
-			<div class="row">
-					<div class="col-sm-12 col-md-3 ">
-						<div class="peliculas">
-							<img src=".././img/joker.jpg"class="img-fluid">
-							<h4>TITUTLO</h4>
-							<h5>TRAILER Y DESCRICION</h5>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-3 ">
-						<div class="peliculas">
-							<img src=".././img/joker.jpg"class="img-fluid">
-							<h4>TITUTLO</h4>
-							<h5>TRAILER Y DESCRICION</h5>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-3">
-						<div class="peliculas">
-							<img src=".././img/familiaAddams.jpg"class="img-fluid">
-							<h4>TITULO</h4>
-							<h5>TRAILER Y DESCRICION</h5>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-3">
-						<div class="peliculas">
-							<img src=".././img/doctorSueño.jpg"class="img-fluid">
-							<h4>TITULO</h4>
-							<h5>TRAILER Y DESCRICION</h5>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-						<div class="col-sm-12 col-md-3 ">
-							<div class="peliculas">
-								<img src=".././img/joker.jpg"class="img-fluid">
-								<h4>TITUTLO</h4>
-								<h5>TRAILER Y DESCRICION</h5>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-3 ">
-							<div class="peliculas">
-								<img src=".././img/joker.jpg"class="img-fluid">
-								<h4>TITUTLO</h4>
-								<h5>TRAILER Y DESCRICION</h5>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-3">
-							<div class="peliculas">
-								<img src=".././img/familiaAddams.jpg"class="img-fluid">
-								<h4>TITULO</h4>
-								<h5>TRAILER Y DESCRICION</h5>
-							</div>
-						</div>
-						<div class="col-sm-12 col-md-3">
-							<div class="peliculas">
-								<img src=".././img/doctorSueño.jpg"class="img-fluid">
-								<h4>TITULO</h4>
-								<h5>TRAILER Y DESCRICION</h5>
-							</div>
-						</div>
-					</div>
+			<div class="social">
+				<ul>
+					<a href="https://www.facebook.com/popfilm.java.52" target="_blank" class="icon-facebook2"></a>
+					<a href="https://www.twitter.com/PopfilmO" target="_blank" class="icon-twitter"></a>
+					<a href="https://www.pinterest.es/popfilmoficial/" target="_blank" class="icon-pinterest2"></a>
+					<a href="https://www.instagram.com/popfilm_oficial/" target="_blank" class="icon-instagram"></a>
+					<a href="mailto:popflimoficial@gmail.com" class="icon-envelop"></a>
+				</ul>
+			</div>
+			<div class="footer">
+				<p>| Copyright ©2019 All rights reserved |</p>
+				<p>
+					<a class="about" href="">| FAQs |</a>
+					<a class="about" href="About.html">| About |</a>
+				</p>
+			</div>
+		</nav>
+	</header>
+	<!-- BODY -->
+	<div id="contenedor_principal">
+		
 	</div>
-	<footer class="footer">
-		<div class="card">
-			<div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-			</div>
-		</div>
-	</footer>
 </body>
 
 </html>
