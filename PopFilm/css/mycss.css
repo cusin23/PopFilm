@@ -7,6 +7,12 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+html, body{
+	height:100%;
+	margin: 0;
+	/* display: flex; */
+	flex-direction: column;
+  }
 /* CONFIGURACION NAVBAR */
 
 img.imagnav{
@@ -207,7 +213,7 @@ a.about{
 	float: right;
 	align-items: flex-start;
 }
-/* CONFIGURACION BODY */
+/* CONFIGURACION INDEX */
 #contenedor_principal{
 	position:initial;
 	background-color: rgb(223, 220, 220);
@@ -220,21 +226,157 @@ a.about{
 }
 /* CONFIGURACION GENERO */
 #contenedor_genero{
-	/* position:initial; */
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size:contain;
-	background-image: url(../img/fondo\ cine.jpg);
-	margin-right:0;
-	/* margin-top: 1.2em; */
-	width: 98.8em;
-	height:56em;
+	background-image: url(../img/fondo_cine.jpg);
+	width: 100%;
+	height:100%;
 	float: right;
 	align-items: flex-start;
 }
-#imggen{
+#infogen{
+	position: absolute;
+	overflow: hidden;
 	width: 270px;
 	height: 150px;
-	margin: 30px;
+	background-color: rgba(58, 58, 58, 0.9);
+	transition: opacity 0.2s;
+	opacity: 0;
+}
+
+#headgen{
+	position: absolute;
+	margin-top: 20px;
+	text-align: center;
+	transition: margin 0.2s;
+	color:white;
+	margin-left: -50%;
+	font-size: 21px;
+}
+#descgen{
+	margin: auto;
+	color: white;
+	font-size: 21px;
+	width: 250px;
+	text-align: center;
+	transition: margin 0.3s;
+	margin-top: 160px;
+}
+/* TERROR */
+#imgTerror{
+	width: 270px;
+	height: 150px;
+	margin-left: 22%;
+	margin-top: 5%;
 	background-image: url(../img/terror.png);
+	display: inline-block;
+}
+#imgTerror:hover #infogen{
+	opacity: 1;
+}
+#imgTerror:hover #headgen{
+	margin-left: 38%;
+}
+#imgTerror:hover #descgen{
+	margin-top: 25%;
+}
+
+/* DRAMA */
+#imgDrama{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/drama.png);
+	display: inline-block;
+}
+#imgDrama:hover #infogen{
+	opacity: 1;
+}
+#imgDrama:hover #headgen{
+	margin-left: 38%;
+}
+#imgDrama:hover #descgen{
+	margin-top: 25%;
+}
+/* ACCION */
+#imgAccion{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/accion.png);
+	display: inline-block;
+}
+#imgAccion:hover #infogen{
+	opacity: 1;
+}
+#imgAccion:hover #headgen{
+	margin-left: 38%;
+}
+#imgAccion:hover #descgen{
+	margin-top: 25%;
+}
+/* SCI-FI */
+#imgCF{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/sci_fi.png);
+	display: inline-block;
+}
+#imgCF:hover #infogen{
+	opacity: 1;
+}
+#imgCF:hover #headgen{
+	margin-left: 38%;
+}
+#imgCF:hover #descgen{
+	margin-top: 25%;
+}
+/* COMEDIA */
+#imgComedia{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/comedia.png);
+	display: inline-block;
+}
+#imgComedia:hover #infogen{
+	opacity: 1;
+}
+#imgComedia:hover #headgen{
+	margin-left: 38%;
+}
+#imgComedia:hover #descgen{
+	margin-top: 25%;
+}
+/* AVENTURAS */
+#imgAven{
+	margin-left: 22%;
+	margin-top: 2%;
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/aventuras.png);
+	display: inline-block;
+}
+#imgAven:hover #infogen{
+	opacity: 1;
+}
+#imgAven:hover #headgen{
+	margin-left: 38%;
+}
+#imgAven:hover #descgen{
+	margin-top: 25%;
+}
+/* AVENTURAS */
+#imgAni{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/animacion.png);
+	display: inline-block;
+}
+#imgAni:hover #infogen{
+	opacity: 1;
+}
+#imgAni:hover #headgen{
+	margin-left: 38%;
+}
+#imgAni:hover #descgen{
+	margin-top: 25%;
 }
