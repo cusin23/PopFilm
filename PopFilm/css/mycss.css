@@ -263,45 +263,12 @@ a.about{
 	transition: margin 0.3s;
 	margin-top: 160px;
 }
-/* TERROR */
-#imgTerror{
-	width: 270px;
-	height: 150px;
-	margin-left: 22%;
-	margin-top: 5%;
-	background-image: url(../img/terror.png);
-	display: inline-block;
-}
-#imgTerror:hover #infogen{
-	opacity: 1;
-}
-#imgTerror:hover #headgen{
-	margin-left: 38%;
-}
-#imgTerror:hover #descgen{
-	margin-top: 25%;
-}
-
-/* DRAMA */
-#imgDrama{
-	width: 270px;
-	height: 150px;
-	background-image: url(../img/drama.png);
-	display: inline-block;
-}
-#imgDrama:hover #infogen{
-	opacity: 1;
-}
-#imgDrama:hover #headgen{
-	margin-left: 38%;
-}
-#imgDrama:hover #descgen{
-	margin-top: 25%;
-}
 /* ACCION */
 #imgAccion{
 	width: 270px;
 	height: 150px;
+	margin-left: 22%;
+	margin-top: 5%;
 	background-image: url(../img/accion.png);
 	display: inline-block;
 }
@@ -314,20 +281,53 @@ a.about{
 #imgAccion:hover #descgen{
 	margin-top: 25%;
 }
-/* SCI-FI */
-#imgCF{
+
+/* ANIMACION */
+#imgAni{
 	width: 270px;
 	height: 150px;
-	background-image: url(../img/sci_fi.png);
+	background-image: url(../img/animacion.png);
 	display: inline-block;
 }
-#imgCF:hover #infogen{
+#imgAni:hover #infogen{
 	opacity: 1;
 }
-#imgCF:hover #headgen{
+#imgAni:hover #headgen{
+	margin-left: 33%;
+}
+#imgAni:hover #descgen{
+	margin-top: 25%;
+}
+/* AVENTURA */
+#imgAven{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/aventuras.png);
+	display: inline-block;
+}
+#imgAven:hover #infogen{
+	opacity: 1;
+}
+#imgAven:hover #headgen{
+	margin-left: 36%;
+}
+#imgAven:hover #descgen{
+	margin-top: 25%;
+}
+/* SCI-FI */
+#imgbel{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/belico.png);
+	display: inline-block;
+}
+#imgbel:hover #infogen{
+	opacity: 1;
+}
+#imgbel:hover #headgen{
 	margin-left: 38%;
 }
-#imgCF:hover #descgen{
+#imgbel:hover #descgen{
 	margin-top: 25%;
 }
 /* COMEDIA */
@@ -346,37 +346,119 @@ a.about{
 #imgComedia:hover #descgen{
 	margin-top: 25%;
 }
-/* AVENTURAS */
-#imgAven{
+/* DRAMA */
+#imgDrama{
 	margin-left: 22%;
 	margin-top: 2%;
 	width: 270px;
 	height: 150px;
-	background-image: url(../img/aventuras.png);
+	background-image: url(../img/drama.png);
 	display: inline-block;
 }
-#imgAven:hover #infogen{
+#imgDrama:hover #infogen{
 	opacity: 1;
 }
-#imgAven:hover #headgen{
+#imgDrama:hover #headgen{
 	margin-left: 38%;
 }
-#imgAven:hover #descgen{
+#imgDrama:hover #descgen{
 	margin-top: 25%;
 }
-/* AVENTURAS */
-#imgAni{
+/* HISTORICO */
+#imgHist{
 	width: 270px;
 	height: 150px;
-	background-image: url(../img/animacion.png);
+	background-image: url(../img/historico.png);
 	display: inline-block;
 }
-#imgAni:hover #infogen{
+#imgHist:hover #infogen{
 	opacity: 1;
 }
-#imgAni:hover #headgen{
+#imgHist:hover #headgen{
+	margin-left: 34%;
+}
+#imgHist:hover #descgen{
+	margin-top: 25%;
+}
+/* MUSICAL */
+#imgMus{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/musical.png);
+	display: inline-block;
+}
+#imgMus:hover #infogen{
+	opacity: 1;
+}
+#imgMus:hover #headgen{
+	margin-left: 36%;
+}
+#imgMus:hover #descgen{
+	margin-top: 25%;
+}
+/* SCI_FI */
+#imgSci{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/sci_fi.png);
+	display: inline-block;
+}
+#imgSci:hover #infogen{
+	opacity: 1;
+}
+#imgSci:hover #headgen{
 	margin-left: 38%;
 }
-#imgAni:hover #descgen{
+#imgSci:hover #descgen{
+	margin-top: 25%;
+}
+/* Terror */
+#imgTerror{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/terror.png);
+	display: inline-block;
+}
+#imgTerror:hover #infogen{
+	opacity: 1;
+}
+#imgTerror:hover #headgen{
+	margin-left: 38%;
+}
+#imgTerror:hover #descgen{
+	margin-top: 25%;
+}
+/* THRILLER */
+#imgTh{
+	margin-left: 42%;
+	margin-top: 2%;
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/thriller.png);
+	display: inline-block;
+}
+#imgTh:hover #infogen{
+	opacity: 1;
+}
+#imgTh:hover #headgen{
+	margin-left: 37%;
+}
+#imgTh:hover #descgen{
+	margin-top: 25%;
+}
+/* WESTERN */
+#imgWestern{
+	width: 270px;
+	height: 150px;
+	background-image: url(../img/western.png);
+	display: inline-block;
+}
+#imgWestern:hover #infogen{
+	opacity: 1;
+}
+#imgWestern:hover #headgen{
+	margin-left: 37%;
+}
+#imgWestern:hover #descgen{
 	margin-top: 25%;
 }
